@@ -41,3 +41,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/build
+/lib/features/home/data
+lib/features/home/view/widgets/welcome_widget.dart
+lib/features/home/view/widgets/user_item.dart

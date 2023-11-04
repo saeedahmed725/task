@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_common_extensions/flutter_common_extensions.dart';
 
-import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/static.dart';
-import '../../../../core/widgets/custom_text.dart';
+import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/constants/static.dart';
+import '../../../../../core/widgets/custom_text.dart';
 import 'category_item.dart';
 
 class CategoriesWidget extends StatelessWidget {

@@ -21,16 +21,22 @@ class NavBarItem extends StatelessWidget {
     return Expanded(
       child: InkWell(
         onTap: () => homeController.getCurrentNavBarIndex(index),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Obx(() => SvgPicture.asset(Static.navBarImage[index],
-                color: homeController.currentIndexNavBar.value == index
-                    ? AppColor.kPrimaryColor
-                    : AppColor.kBrightGrayColor)),
-            CustomText(text: Static.appNavBarTitles[index])
-          ],
-        ),
+        child: Obx(() => Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgPicture.asset(Static.navBarImage[index],
+                    color: homeController.currentIndexNavBar.value == index
+                        ? AppColor.kPrimaryColor
+                        : AppColor.kBrightGrayColor),
+                CustomText(
+                  text: Static.appNavBarTitles[index],
+                  fontWeigh: FontWeight.w600,
+                  color: homeController.currentIndexNavBar.value == index
+                      ? AppColor.kPrimaryColor
+                      : AppColor.kBrightGrayColor,
+                )
+              ],
+            )),
       ),
     );
   }
