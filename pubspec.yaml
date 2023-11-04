@@ -1,0 +1,37 @@
+name: task
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0-46.0.dev <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  svg_flutter: ^0.0.1
+  get: ^4.6.6
+  flutter_common_extensions: ^0.0.3
+  dio: ^5.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+     - assets/images/home/png/
+     - assets/images/home/svg/
+  fonts:
+     - family: Outfit
+       fonts:
+         - asset: assets/fonts/Outfit_Regular.ttf
