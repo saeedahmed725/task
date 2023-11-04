@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/app_image_assets.dart';
-import '../../../../core/widgets/custom_text.dart';
+import '../../../../../core/constants/app_image_assets.dart';
+import '../../../../../core/widgets/custom_text.dart';
 
 class WelcomeWidget extends StatelessWidget {
   const WelcomeWidget({

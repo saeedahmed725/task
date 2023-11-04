@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:task/core/widgets/custom_text.dart';
 
 import '../../../../../core/controller/home_controller.dart';
-import '../../../data/user_model.dart';
-import '../user_item.dart';
+import 'user_item.dart';
 
 class UsersWidget extends StatelessWidget {
   const UsersWidget({super.key});
@@ -11,18 +11,25 @@ class UsersWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     HomeController controller = Get.find();
-    return FutureBuilder<List<UserModel>>(
+    return FutureBuilder(
         future: controller.usersData,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return Column(
-              children: List.generate(
-                  snapshot.data!.length, (index) =>
-                  UserItem(id: snapshot.data![index].id,
-                      name: snapshot.data![index].name)),
-            );
+            return snapshot.data!.fold((failure) {
+              return Center(
+                child: CustomText(text: failure.message),
+              );
+            }, (users) {
+              return Column(
+                children: List.generate(
+                  users.length,
+                  (index) =>
+                      UserItem(id: users[index].id, name: users[index].name),
+                ),
+              );
+            });
           } else {
-            return Container();
+            return const Center(child: CircularProgressIndicator());
           }
         });
   }

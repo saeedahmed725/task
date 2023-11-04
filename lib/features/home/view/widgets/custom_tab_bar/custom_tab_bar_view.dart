@@ -3,7 +3,6 @@ import 'package:task/features/home/view/widgets/custom_tab_bar/services.dart';
 import 'package:task/features/home/view/widgets/custom_tab_bar/user_widegt.dart';
 
 import '../../../../../core/controller/home_controller.dart';
-import '../categories_widget.dart';
 import 'orders.dart';
 
 class CustomTabBarView extends StatelessWidget {
@@ -19,10 +18,10 @@ class CustomTabBarView extends StatelessWidget {
     return Expanded(
       child: TabBarView(
         controller: controller.tabController,
-        children: [
-          controller.isTaskOne ? const CategoriesWidget() : const UsersWidget(),
-          const Services(),
-          const Orders(),
+        children: const [
+          UsersWidget(),  // show user instead of categories
+          Services(),
+          Orders(),
         ],
       ),
     );
