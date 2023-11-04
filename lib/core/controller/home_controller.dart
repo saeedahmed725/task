@@ -14,9 +14,7 @@ class HomeController extends GetxController
 
   ApiServices services = ApiServices();
 
-  Future<List<UserModel>> usersData =
-      Future(() => []); // to get User data ==> singleTune
-  bool isTaskOne = true;
+
 
   RxInt activeTabIndex = RxInt(0);
 
@@ -47,7 +45,6 @@ class HomeController extends GetxController
 
   @override
   void onInit() {
-    usersData = services.getUsers(); // get data from Api as List<UserModel>
     super.onInit();
     tabController = TabController(
       length: Static.tabBarTitles.length,
