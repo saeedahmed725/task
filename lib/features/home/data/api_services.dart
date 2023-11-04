@@ -16,8 +16,8 @@ class ApiServices {
         users.add(userModel);
       }
       return right(users);
-    } catch (err) {
-      return left(NetworkFailure(err.toString()));
+    }  on DioException catch (err) {
+      return left(NetworkFailure.fromDioError(err));
     }
   }
 }

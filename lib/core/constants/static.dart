@@ -47,9 +47,8 @@ class Static {
     'Profile',
   ];
   static List<String> tabBarTitles = [
-    'Categories',
+    'Users',
     'Services',
     'Orders (0)',
   ];
-
 }
