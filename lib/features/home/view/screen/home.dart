@@ -14,8 +14,9 @@ class Home extends GetView<HomeController> {
   Widget build(BuildContext context) {
     HomeController homeController = Get.find();
     return Scaffold(
-      appBar: const HomeAppBar(),
+      appBar: const HomeAppBar(),  // Custom AppBar
       body: Obx(() {
+        // to toggle between screens
         return IndexedStack(
           index: homeController.currentIndexNavBar.value,
           children: const [
@@ -26,7 +27,7 @@ class Home extends GetView<HomeController> {
           ],
         );
       }),
-      bottomNavigationBar: const CustomNavBar(),
+      bottomNavigationBar: const CustomNavBar(),  // Custom BottomNavigationBar
     );
   }
 }

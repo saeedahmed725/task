@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_common_extensions/flutter_common_extensions.dart';
 import 'package:get/get.dart';
 
-import '../../../../core/constants/app_colors.dart';
-import '../../../../core/widgets/custom_text.dart';
+import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/widgets/custom_text.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -23,7 +22,7 @@ class CustomButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 7),
         margin: const EdgeInsets.symmetric(horizontal: 2),
         alignment: Alignment.center,
-        width: 0.37* Get.width,
+        width: 0.37 * Get.width,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
           color: AppColor.kPrimaryColor,

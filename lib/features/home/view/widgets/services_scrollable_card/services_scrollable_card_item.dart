@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_common_extensions/flutter_common_extensions.dart';
 
-import '../../../../core/constants/app_colors.dart';
-import '../../../../core/widgets/custom_text.dart';
+import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/widgets/custom_text.dart';
 import 'custom_button.dart';
 
 class ServicesScrollableCardItem extends StatelessWidget {

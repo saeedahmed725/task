@@ -3,9 +3,9 @@ import 'package:flutter_common_extensions/flutter_common_extensions.dart';
 import 'package:get/get.dart';
 import 'package:svg_flutter/svg.dart';
 
-import '../../../../core/constants/app_colors.dart';
-import '../../../../core/constants/app_image_assets.dart';
-import '../../../../core/widgets/custom_text.dart';
+import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/constants/app_image_assets.dart';
+import '../../../../../core/widgets/custom_text.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem({

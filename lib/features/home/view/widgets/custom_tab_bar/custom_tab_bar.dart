@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../../../../../core/constants/app_colors.dart';
 import '../../../../../core/constants/app_fonts.dart';
@@ -30,6 +29,7 @@ class CustomTabBar extends StatelessWidget {
         overlayColor: const MaterialStatePropertyAll(Colors.transparent),
         dividerColor: Colors.transparent,
         unselectedLabelColor: Colors.black,
+        labelColor: Colors.white,
         padding: EdgeInsets.zero,
         labelPadding: EdgeInsets.zero,
         labelStyle: TextStyle(
@@ -37,7 +37,7 @@ class CustomTabBar extends StatelessWidget {
         indicatorSize: TabBarIndicatorSize.tab,
         tabs: List.generate(
           Static.tabBarTitles.length,
-              (index) => CustomTabs(
+          (index) => CustomTabs(
             controller: controller,
             index: index,
           ),

@@ -13,7 +13,7 @@ class TabBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     HomeController controller = Get.find();
     return SizedBox(
-      height: controller.isTaskOne? 0.57 * Get.height : 0.92 * Get.height,
+      height: 0.57 * Get.height,
       child: DefaultTabController(
         length: Static.tabBarTitles.length,
         child: Scaffold(

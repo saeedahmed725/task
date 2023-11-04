@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:task/features/home/view/widgets/welcome_widget.dart';
+import 'package:task/features/home/view/widgets/intro_widgets/welcome_widget.dart';
 
-import '../../../../core/constants/app_colors.dart';
-import '../../../../core/widgets/custom_text.dart';
+import '../../../../../core/constants/app_colors.dart';
+import '../../../../../core/widgets/custom_text.dart';
 
 class IntroCard extends StatelessWidget {
   const IntroCard({
